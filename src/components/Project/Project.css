@@ -1,0 +1,112 @@
+.cont-project {
+  color: white;
+  background-image: url("/PATTERN.png");
+  background-size: cover;
+  display: flex;
+
+  margin-top: 80px;
+  margin-bottom: 100px;
+}
+.left {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.center {
+  flex: 3;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.made {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.made h3 {
+  margin: 5px;
+}
+.made span {
+  color: aqua;
+  margin-left: 5px;
+}
+
+.card-pro {
+  max-width: 60%;
+  background-color: rgb(22, 20, 20);
+  max-height: 600px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+  border: 1px solid white;
+  opacity: 90%;
+  backdrop-filter: blur(18px);
+  backdrop-filter: saturate(20px);
+}
+.card-pro img {
+  max-width: 100%;
+  max-height: 300px;
+}
+.text-pro {
+  max-width: 90%;
+}
+
+.right {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.addon {
+  font-size: 56px;
+  color: white;
+  padding: 30px;
+}
+
+.icon-pro {
+  background-color: rgb(22, 20, 20);
+  padding: 25px;
+  border-radius: 50%;
+  border: 1px solid white;
+
+  backdrop-filter: blur(18px);
+  backdrop-filter: saturate(20px);
+}
+.end-pro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  padding: 10px;
+}
+
+.end-pro-left {
+  flex: 2;
+}
+
+.end-pro-right {
+  flex: 1;
+  padding: 5px;
+}
+
+.icon-like {
+  font-size: 18px;
+  margin-right: 10px;
+}
+
+.icon-like:hover {
+  color: yellow;
+  scale: 1.2;
+}
+.icon-pro:hover {
+  color: aqua;
+  border-color: aqua;
+  background-color: black;
+}

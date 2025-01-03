@@ -1,0 +1,154 @@
+.cont-userpro {
+  color: white;
+  display: flex;
+  margin: 50px;
+}
+
+.left-user {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  border-right: 1px solid white;
+  background-color: rgb(17, 17, 17);
+  opacity: 90%;
+  backdrop-filter: blur(18px);
+  backdrop-filter: saturate(20px);
+}
+
+.user-img {
+  /* background-color: violet; */
+}
+.user-img img {
+  max-width: 300px;
+  border-radius: 50%;
+}
+
+.user-img,
+.user-desc,
+.user-social {
+  min-width: 0;
+  box-sizing: border-box;
+
+  padding: 10px;
+  max-width: 350px;
+}
+
+.user-desc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 5px;
+}
+.user-social {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.u-link {
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.icon {
+  font-size: 16px;
+  margin: 5px;
+}
+
+.right-user {
+  flex: 2.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.user-deets {
+  display: flex;
+  flex-direction: column;
+  margin-left: 50px;
+  background-color: rgb(55, 55, 55);
+  padding: 25px;
+  border-radius: 5px;
+}
+
+.user-info {
+  margin: 10px;
+  max-width: 90%;
+}
+.user-projects {
+  display: flex;
+}
+
+.user-project-sec {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.head-name {
+  color: aqua;
+  margin: 20px;
+}
+
+.user-header {
+  display: flex;
+  align-items: center;
+}
+.user-edit {
+  font-size: 24px;
+  display: flex;
+  align-items: center;
+}
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(100px);
+  z-index: 1;
+  display: flex;
+}
+@media (max-width: 768px) {
+  .cont-userpro {
+    flex-direction: column;
+    margin: 20px;
+  }
+
+  .left-user {
+    flex: 1;
+    border-right: none;
+  }
+
+  .user-desc {
+    padding: 10px;
+  }
+
+  .user-social {
+    margin-top: 20px;
+  }
+
+  .user-deets {
+    margin-left: 0;
+  }
+
+  .user-info,
+  .user-projects {
+    margin: 10px 0;
+  }
+  .user-projects {
+    display: flex;
+    flex-direction: column;
+  }
+}

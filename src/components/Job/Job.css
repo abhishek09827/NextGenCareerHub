@@ -1,0 +1,103 @@
+.job-cont-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(11, 10, 10, 0.604);
+  margin: 50px;
+  margin-bottom: 110px;
+}
+
+.img_section {
+  flex: 3;
+}
+.img_about {
+  height: 60vh;
+}
+.header {
+  margin: 50px;
+
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  font-family: "Mukta", sans-serif;
+  background-color: #664de5;
+
+  height: 30vh;
+  padding: 15vh;
+  background-size: cover;
+  background-blend-mode: multiply;
+  color: rgb(16, 16, 16);
+  text-align: left;
+  font-size: 25px;
+  flex: 3.5;
+}
+
+.header h2 {
+  font-weight: 800;
+  font-size: 2rem;
+  text-transform: uppercase;
+  color: black;
+  padding-right: 340px;
+}
+
+.header p {
+  font-size: 1.5rem;
+}
+
+.read-btn {
+  color: black;
+  background-color: #dfdf1f;
+  padding: 10px 20px;
+  border: 2px solid transparent;
+  border-radius: 3px;
+  cursor: pointer;
+
+  transition: border-radius 0.5s ease-in-out;
+}
+
+.read-btn:hover {
+  border-radius: 30px;
+}
+.job-cont-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.job-cont-form h2 {
+  font-size: 2.25rem;
+  margin: 20px;
+}
+@media (max-width: 768px) {
+  .job-cont-head {
+    margin: 20px;
+    margin-bottom: 60px;
+  }
+
+  .img_section {
+    display: none;
+  }
+
+  .header {
+    padding: 10vh;
+  }
+
+  .header h2 {
+    font-size: 1.5rem;
+    padding-right: 20px;
+  }
+
+  .header p {
+    font-size: 1rem;
+  }
+
+  .read-btn {
+    padding: 8px 16px;
+  }
+
+  .job-cont-form h2 {
+    font-size: 2rem;
+    margin: 10px;
+  }
+}

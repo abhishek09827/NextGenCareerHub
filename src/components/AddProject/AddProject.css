@@ -1,0 +1,168 @@
+.addpro-cont {
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+.registerp {
+  display: flex;
+  width: 70%;
+  backdrop-filter: blur(15px) saturate(180%);
+  -webkit-backdrop-filter: blur(15px) saturate(180%);
+  background-color: rgba(32, 27, 33, 0.7);
+  opacity: 80%;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.125);
+  padding: 25px;
+  flex-direction: column;
+}
+.registerp-form {
+  border: 1px solid white;
+  margin: 10px;
+}
+.line-reg {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.line-reg h1 {
+  font-size: 2.5rem;
+  color: gray;
+}
+.leftformpro {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.addpro-right {
+  margin: 20px;
+}
+.registerp label {
+  padding: 5px;
+  color: white;
+}
+.registerp form input,
+.registerp form textarea,
+.registerp form select {
+  display: flex;
+  font-size: 18px;
+  padding: 15px;
+  border-bottom: 1px solid rgb(216, 214, 214);
+  border-right: none;
+  border-left: none;
+  border-top: none;
+  background-color: black;
+  outline: none;
+  color: #2790e6;
+}
+
+.registerp form button {
+  border: none;
+  padding: 20px;
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  background-color: slategray;
+  cursor: pointer;
+}
+
+.registerp form .toggle {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.registerp form .toggle .switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 15px;
+}
+
+.registerp form .toggle .switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.registerp form .toggle .switch .slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: 0.4s;
+  border-radius: 24px;
+}
+
+.registerp form .toggle .switch .slider:before {
+  position: absolute;
+  content: "";
+  height: 16px;
+  width: 16px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+.registerp form .toggle .switch input:checked + .slider {
+  background-color: #2196f3;
+}
+
+.registerp form .toggle .switch input:focus + .slider {
+  box-shadow: 0 0 1px #2196f3;
+}
+
+.registerp form .toggle .switch input:checked + .slider:before {
+  transform: translateX(26px);
+}
+
+.but-addpro {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.form-add-but {
+  padding: 12px;
+  margin: 15px;
+  background-color: #2196f3;
+  color: white;
+  border: none;
+  border-radius: 2px;
+}
+.form-add-but:hover {
+  background-color: black;
+  color: white;
+  border: 1px solid white;
+  cursor: pointer;
+}
+.pro-but-fet {
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+}
+@media (max-width: 600px) {
+  .addpro-cont {
+    flex-direction: column;
+    max-width: screen;
+  }
+  .leftformpro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .addpro-right {
+    margin: 0px;
+  }
+  .registerp form input,
+  .registerp form textarea,
+  .registerp form select {
+    padding: 10px;
+  }
+}

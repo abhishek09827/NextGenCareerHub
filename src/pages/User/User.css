@@ -1,0 +1,54 @@
+.job-gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.n-text {
+  font-size: 2rem;
+  color: #8e8a8a;
+  margin-bottom: 5px;
+  margin: 20px;
+}
+
+.hi-text {
+  margin-top: 20px;
+  display: inline-block;
+  font-size: 2.25rem;
+  position: relative;
+  color: aqua;
+}
+.my-projects {
+  margin-top: 50px;
+  font-size: 2.25rem;
+  text-align: center;
+}
+
+.popup {
+  position: fixed;
+  top: 13%;
+  left: 85%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  border-radius: 5px;
+}
+
+.popup p {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+}
+
+@media (max-width: 768px) {
+  .job-gallery {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .hi-text {
+    font-size: 1.8rem;
+  }
+}

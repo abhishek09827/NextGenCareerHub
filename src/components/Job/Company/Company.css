@@ -1,0 +1,12 @@
+.sec1 {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  margin: 50px;
+  padding: 50px;
+  flex-direction: column;
+}
+
+.comp-head {
+  font-size: 1.75rem;
+}

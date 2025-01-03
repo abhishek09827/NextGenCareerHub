@@ -1,0 +1,141 @@
+/*-----------Testimonials--------------*/
+.testi-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+}
+.testimonials {
+  width: 50rem;
+  height: 500px;
+  color: white;
+  display: flex;
+  margin: 20px;
+  align-items: center;
+  justify-content: center;
+}
+
+.testimonials__container {
+  height: 250px;
+  margin-bottom: 300px;
+}
+.testimonials__head {
+  justify-content: center;
+}
+
+.testi-user {
+  background: rgba(83, 82, 82, 0.355);
+  border: 2px solid transparent;
+  text-align: center;
+  padding: 3rem 2rem;
+  border-radius: 0 1.5rem 0 1.5rem;
+  transition: 0.2s ease-in-out;
+}
+
+.testi-user:hover {
+  background: transparent;
+  border-color: plum;
+  cursor: default;
+}
+
+.testi-user span {
+  width: 3rem;
+  height: 3rem;
+  background: aqua;
+  color: white;
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  display: grid;
+  place-items: center;
+  margin-bottom: 1.5rem;
+  margin-inline: auto;
+  border-radius: 1rem;
+  transition: ease-in;
+}
+
+.testi-user small {
+  margin-top: 1rem;
+  display: block;
+  font-weight: 300;
+}
+
+.testi-user.testimonial {
+  text-align: left;
+  margin-top: 5rem;
+  border-radius: 0 !important;
+}
+
+.testimonial__avatar {
+  width: 4rem;
+  height: 4rem;
+  border: 2px solid transparent;
+  border-radius: 1.5rem;
+  overflow: hidden;
+
+  box-shadow: 0 1.5rem 2rem rgba(128, 128, 130, 0.4);
+  transition: ease-in-out 1s;
+}
+
+.testimonial:hover .testimonial__avatar {
+  border-radius: 50%;
+  border-color: white;
+}
+
+.testimonial__quote {
+  font-style: italic;
+  margin: 1rem 0 2rem;
+}
+
+.testi-user small.testimonial__title {
+  margin-top: 0.3rem;
+}
+
+.testimonials__btn-container {
+  width: fit-content;
+  margin: 2.5rem auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.testimonials__btn {
+  background: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+}
+
+.testimonials__btn svg {
+  fill: violet;
+
+  font-size: 1.8rem;
+  width: 3rem;
+  height: 3rem;
+}
+@media (max-width: 768px) {
+  .testimonials {
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    margin-bottom: 100px;
+  }
+
+  .testimonial__avatar {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .testimonials__btn-container {
+    flex-direction: column;
+    margin-top: 1.5rem;
+  }
+
+  .testimonials__btn {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .testimonials__btn svg {
+    font-size: 1.5rem;
+  }
+}
