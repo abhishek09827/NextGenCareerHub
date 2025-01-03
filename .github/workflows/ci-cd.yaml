@@ -38,11 +38,21 @@ jobs:
           docker tag backend-app:latest ${{ secrets.DOCKER_USERNAME }}/backend-app:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/backend-app:latest
 
-      # Configure kubeconfig
-      - name: Configure kubeconfig
+      # Set up kubectl
+      - name: Set up kubectl
+        uses: azure/setup-kubectl@v3
+        with:
+          version: 'latest'
+
+      # Set up kubeconfig
+      - name: Set up kubeconfig
         run: |
-          mkdir -p $HOME/.kube
-          echo "${{ secrets.KUBECONFIG_CONTENT }}" > $HOME/.kube/config
+          echo "$KUBECONFIG_CONTENT" | base64 -d > $HOME/.kube/config
+
+      # Verify kubectl config
+      - name: Verify kubectl config
+        run: |
+          kubectl config view
 
       # Deploy to Kubernetes
       - name: Deploy to Kubernetes
