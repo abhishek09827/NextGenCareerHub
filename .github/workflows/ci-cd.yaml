@@ -21,7 +21,7 @@ jobs:
 
     - name: Build backend Docker image
       run: |
-        docker build -t backend-app ./backend
+        docker build -t backend-app ../../backend
 
     # Push Docker images to Docker Hub
     - name: Log in to Docker Hub
@@ -44,4 +44,4 @@ jobs:
 
     - name: Deploy to Kubernetes
       run: |
-        kubectl apply -f ./k8s/backend-deployment.yaml
+        kubectl apply -f ../../backend/deployment.yaml
