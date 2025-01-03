@@ -38,18 +38,3 @@ jobs:
           docker tag backend-app:latest ${{ secrets.DOCKER_USERNAME }}/backend-app:latest
           docker push ${{ secrets.DOCKER_USERNAME }}/backend-app:latest
 
-      # Set up kubectl
-      - name: Set up kubectl
-        uses: azure/setup-kubectl@v3
-        with:
-          version: 'latest'
-
-      # Verify kubectl config
-      - name: Verify kubectl config
-        run: |
-          kubectl config view
-
-      # Deploy to Kubernetes
-      - name: Deploy to Kubernetes
-        run: |
-          kubectl apply -f ./backend/deployment.yaml
