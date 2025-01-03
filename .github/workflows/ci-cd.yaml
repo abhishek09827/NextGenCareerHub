@@ -35,8 +35,8 @@ jobs:
       # Step 5: Tag and push backend Docker image
       - name: Push backend Docker image
         run: |
-          docker tag backend-app:latest ${{ secrets.DOCKER_USERNAME }}/backend-app:latest
-          docker push ${{ secrets.DOCKER_USERNAME }}/backend-app:latest
+          docker tag backend-app:latest ab09827/backend-app:latest
+          docker push ab09827/backend-app:latest
 
       # Step 6: Set up kubectl
       - name: Set up kubectl
