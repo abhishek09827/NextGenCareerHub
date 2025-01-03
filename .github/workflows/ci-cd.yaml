@@ -44,11 +44,6 @@ jobs:
         with:
           version: 'latest'
 
-      # Set up kubeconfig
-      - name: Set up kubeconfig
-        run: |
-          echo "$KUBECONFIG_CONTENT" | base64 -d > $HOME/.kube/config
-
       # Verify kubectl config
       - name: Verify kubectl config
         run: |
