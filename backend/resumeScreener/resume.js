@@ -1,11 +1,10 @@
 import { PDFLoader } from "langchain/document_loaders/fs/pdf";
-import { RecursiveCharacterTextSplitter } from "langchain/text_splitter";
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import fs from "fs";
 import axios from "axios";
 
 async function resumeScreener(resume, jobDescription) {
-  const generativeAI = new GoogleGenerativeAI( "AIzaSyD0C3UXKbLHySByr23khF1e8cAa-zU3MrA");
+  const generativeAI = new GoogleGenerativeAI( "GEMINI_API_KEY" );
   const model = generativeAI.getGenerativeModel({ model: "gemini-1.5-flash" });
 
   const cloudinaryUrl = resume;

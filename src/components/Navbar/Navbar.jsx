@@ -72,7 +72,7 @@ const Navbar = () => {
                 hideMenu ? `navigation-menu_li` : `navigation-menu.expanded_li`
               }
             >
-              <a
+              {/* <a
                 href="/empower"
                 className={
                   hideMenu
@@ -81,7 +81,7 @@ const Navbar = () => {
                 }
               >
                 EmpowHer
-              </a>
+              </a> */}
             </li>
             <li>
               {!user && (

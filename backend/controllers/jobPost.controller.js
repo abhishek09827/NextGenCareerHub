@@ -88,10 +88,10 @@ const cleanedScreenResults = cleanScreenResults(screenResults);
 console.log(cleanedScreenResults);
 // Data to be sent in the EmailJS request
 const data = {
-  service_id: 'service_zn8soxl',
-  template_id: 'template_j6mffzr',
-  user_id: 'O1kaE1MkYaAmTAWyQ',
-  accessToken: 'nw_RQoEHuYfHtRjWzlPu1',
+  service_id: 'service_id',
+  template_id: 'template_id',
+  user_id: 'user_id',
+  accessToken: 'accessToken',
   template_params: {
       to_name: 'Abhishek',
       from_name: 'NextGen',

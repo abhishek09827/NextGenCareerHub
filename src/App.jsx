@@ -73,10 +73,10 @@ function App() {
           element: <AddProject />,
         },
 
-        {
-          path: "/empower",
-          element: <Empower />,
-        },
+        // {
+        //   path: "/empower",
+        //   element: <Empower />,
+        // },
         {
           path: "/js",
           element: <JobSide />,
